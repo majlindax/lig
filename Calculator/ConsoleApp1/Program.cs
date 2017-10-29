@@ -7,31 +7,13 @@ namespace Calculator
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("This is a simple calculator. \n Please choose an operation \n");
-            Console.WriteLine("Addition - type a, Subtraction - type s, Multiplication - type m, "
-                              + "Division - type d and Modulation - type o");
-            var operation =  Console.ReadLine();
-            AskForOperation(operation);
-
-            Console.WriteLine("Enter first number");
-            var firstNumber = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter second number");
-            var secondNumber = float.Parse(Console.ReadLine());
-
-            var result = Operations.ExecuteSelectedOperation(operation, firstNumber, secondNumber);
-            Console.WriteLine($"Result = {result}");
-            Console.ReadLine();
-        }
-
-        public static void AskForOperation(string operation)
-        {
-            var isOprationCorrect = Validator.IsCorrectOperation(operation);
-            while (isOprationCorrect == false)
+            Calculator.RunCalculator();
+            
+            Console.WriteLine("Do you want to try again? Type y for yes or any other key for no");
+            var tryAgain = Console.ReadLine();
+            while (tryAgain.ToLower() == "y")
             {
-                Console.WriteLine("Invalid sign, please try again");
-                operation = Console.ReadLine();
-                isOprationCorrect = Validator.IsCorrectOperation(operation);
+                Calculator.RunCalculator();
             }
         }
 

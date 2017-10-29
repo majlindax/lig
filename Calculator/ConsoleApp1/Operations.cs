@@ -8,15 +8,15 @@ namespace Calculator
         {
             switch (chosenOperation)
             {
-                case "a":
+                case "+":
                     return Addition(firstNumber, secondNumber);
-                case "s":
+                case "-":
                     return Subtraction(firstNumber, secondNumber);
-                case "m":
+                case "*":
                     return Multiplication(firstNumber, secondNumber);
-                case "d":
+                case "/":
                     return Division(firstNumber, secondNumber);
-                case "o":
+                case "%":
                     return Modulation(firstNumber, secondNumber);
                 default:
                     throw new Exception("Invalid operation");
