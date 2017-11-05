@@ -10,54 +10,58 @@ namespace CountryFlag
             InitializeComponent();
         }
 
-        private void DisplayFranceFlag(object sender, EventArgs e)
+        private void SelectFranceRadioButton(object sender, EventArgs e)
         {
-        
+            countryFlagPictureBox.Image = Properties.Resources.france;
+            countryNameLabel.Text = "France";
         }
 
-        private void DisplaySwedenFlag(object sender, EventArgs e)
+        private void SelectSwedenRadioButton(object sender, EventArgs e)
         {
-
+            countryFlagPictureBox.Image = Properties.Resources.sweden;
+            countryNameLabel.Text = "Sweden";
         }
 
-        private void DisplayItalyFlag(object sender, EventArgs e)
+        private void SelectItalyRadioButton(object sender, EventArgs e)
         {
-
+            countryFlagPictureBox.Image = Properties.Resources.italy;
+            countryNameLabel.Text = "Italy";
         }
 
-        private void DispalySpainFlag(object sender, EventArgs e)
+        private void SelectSpainRadioButton(object sender, EventArgs e)
         {
-
+            countryFlagPictureBox.Image = Properties.Resources.spain;
+            countryNameLabel.Text = "Spain";
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void HideCountryNameCheckboxCheckedChanged(object sender, EventArgs e)
         {
-
+            countryNameLabel.Text = string.Empty;
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void HideFormTitleCheckboxCheckedChanged(object sender, EventArgs e)
         {
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ExitButtonClick(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void PrintButtonClick(object sender, EventArgs e)
         {
-
         }
 
         private void CountryFlag_Click(object sender, EventArgs e)
         {
+        }
 
+        private void HideProgrammerNameCheckBoxCheckedChanged(object sender, EventArgs e)
+        {
         }
     }
 }
