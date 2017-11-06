@@ -44,6 +44,7 @@
             // 
             // countryFlagPictureBox
             // 
+            this.countryFlagPictureBox.Image = global::CountryFlag.Properties.Resources.france;
             this.countryFlagPictureBox.Location = new System.Drawing.Point(29, 32);
             this.countryFlagPictureBox.Name = "countryFlagPictureBox";
             this.countryFlagPictureBox.Size = new System.Drawing.Size(223, 136);
@@ -51,17 +52,16 @@
             this.countryFlagPictureBox.TabIndex = 0;
             this.countryFlagPictureBox.TabStop = false;
             this.countryFlagPictureBox.Click += new System.EventHandler(this.CountryFlag_Click);
-            this.countryFlagPictureBox.Image = Properties.Resources.france;
             // 
             // franceRadioButton
             // 
             this.franceRadioButton.AutoSize = true;
             this.franceRadioButton.Location = new System.Drawing.Point(297, 33);
             this.franceRadioButton.Name = "franceRadioButton";
-            this.franceRadioButton.Size = new System.Drawing.Size(58, 17);
+            this.franceRadioButton.Size = new System.Drawing.Size(67, 17);
             this.franceRadioButton.TabIndex = 2;
             this.franceRadioButton.TabStop = true;
-            this.franceRadioButton.Text = "France";
+            this.franceRadioButton.Text = "&1.France";
             this.franceRadioButton.UseVisualStyleBackColor = true;
             this.franceRadioButton.CheckedChanged += new System.EventHandler(this.SelectFranceRadioButton);
             // 
@@ -70,10 +70,10 @@
             this.swedenRadioButton.AutoSize = true;
             this.swedenRadioButton.Location = new System.Drawing.Point(297, 56);
             this.swedenRadioButton.Name = "swedenRadioButton";
-            this.swedenRadioButton.Size = new System.Drawing.Size(64, 17);
+            this.swedenRadioButton.Size = new System.Drawing.Size(73, 17);
             this.swedenRadioButton.TabIndex = 3;
             this.swedenRadioButton.TabStop = true;
-            this.swedenRadioButton.Text = "Sweden";
+            this.swedenRadioButton.Text = "&2.Sweden";
             this.swedenRadioButton.UseVisualStyleBackColor = true;
             this.swedenRadioButton.CheckedChanged += new System.EventHandler(this.SelectSwedenRadioButton);
             // 
@@ -82,10 +82,10 @@
             this.italyRadioButton.AutoSize = true;
             this.italyRadioButton.Location = new System.Drawing.Point(297, 79);
             this.italyRadioButton.Name = "italyRadioButton";
-            this.italyRadioButton.Size = new System.Drawing.Size(44, 17);
+            this.italyRadioButton.Size = new System.Drawing.Size(53, 17);
             this.italyRadioButton.TabIndex = 4;
             this.italyRadioButton.TabStop = true;
-            this.italyRadioButton.Text = "Italy";
+            this.italyRadioButton.Text = "&3.Italy";
             this.italyRadioButton.UseVisualStyleBackColor = true;
             this.italyRadioButton.CheckedChanged += new System.EventHandler(this.SelectItalyRadioButton);
             // 
@@ -94,10 +94,10 @@
             this.spainRadioButton.AutoSize = true;
             this.spainRadioButton.Location = new System.Drawing.Point(297, 102);
             this.spainRadioButton.Name = "spainRadioButton";
-            this.spainRadioButton.Size = new System.Drawing.Size(52, 17);
+            this.spainRadioButton.Size = new System.Drawing.Size(61, 17);
             this.spainRadioButton.TabIndex = 5;
             this.spainRadioButton.TabStop = true;
-            this.spainRadioButton.Text = "Spain";
+            this.spainRadioButton.Text = "&4.Spain";
             this.spainRadioButton.UseVisualStyleBackColor = true;
             this.spainRadioButton.CheckedChanged += new System.EventHandler(this.SelectSpainRadioButton);
             // 
@@ -108,7 +108,7 @@
             this.hideFormTitleCheckBox.Name = "hideFormTitleCheckBox";
             this.hideFormTitleCheckBox.Size = new System.Drawing.Size(90, 17);
             this.hideFormTitleCheckBox.TabIndex = 6;
-            this.hideFormTitleCheckBox.Text = "Hide form title";
+            this.hideFormTitleCheckBox.Text = "Hide form &title";
             this.hideFormTitleCheckBox.UseVisualStyleBackColor = true;
             this.hideFormTitleCheckBox.CheckedChanged += new System.EventHandler(this.HideFormTitleCheckboxCheckedChanged);
             // 
@@ -117,9 +117,9 @@
             this.hideCountryNameCheckBox.AutoSize = true;
             this.hideCountryNameCheckBox.Location = new System.Drawing.Point(297, 151);
             this.hideCountryNameCheckBox.Name = "hideCountryNameCheckBox";
-            this.hideCountryNameCheckBox.Size = new System.Drawing.Size(116, 17);
+            this.hideCountryNameCheckBox.Size = new System.Drawing.Size(115, 17);
             this.hideCountryNameCheckBox.TabIndex = 7;
-            this.hideCountryNameCheckBox.Text = "Hide Country name";
+            this.hideCountryNameCheckBox.Text = "Hide &country name";
             this.hideCountryNameCheckBox.UseVisualStyleBackColor = true;
             this.hideCountryNameCheckBox.CheckedChanged += new System.EventHandler(this.HideCountryNameCheckboxCheckedChanged);
             // 
@@ -130,27 +130,27 @@
             this.hideProgrammerNameCheckBox.Name = "hideProgrammerNameCheckBox";
             this.hideProgrammerNameCheckBox.Size = new System.Drawing.Size(135, 17);
             this.hideProgrammerNameCheckBox.TabIndex = 8;
-            this.hideProgrammerNameCheckBox.Text = "Hide programmer name";
+            this.hideProgrammerNameCheckBox.Text = "Hide programmer &name";
             this.hideProgrammerNameCheckBox.UseVisualStyleBackColor = true;
             this.hideProgrammerNameCheckBox.CheckedChanged += new System.EventHandler(this.HideProgrammerNameCheckBoxCheckedChanged);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(381, 242);
+            this.exitButton.Location = new System.Drawing.Point(403, 241);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 9;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.ExitButtonClick);
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(381, 206);
+            this.printButton.Location = new System.Drawing.Point(297, 213);
             this.printButton.Name = "printButton";
             this.printButton.Size = new System.Drawing.Size(75, 23);
             this.printButton.TabIndex = 10;
-            this.printButton.Text = "Print";
+            this.printButton.Text = "&Print";
             this.printButton.UseVisualStyleBackColor = true;
             this.printButton.Click += new System.EventHandler(this.PrintButtonClick);
             // 
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 277);
+            this.ClientSize = new System.Drawing.Size(495, 274);
             this.Controls.Add(this.countryNameLabel);
             this.Controls.Add(this.printButton);
             this.Controls.Add(this.exitButton);

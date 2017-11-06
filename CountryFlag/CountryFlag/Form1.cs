@@ -41,6 +41,7 @@ namespace CountryFlag
 
         private void HideFormTitleCheckboxCheckedChanged(object sender, EventArgs e)
         {
+            Text = hideFormTitleCheckBox.Checked ? string.Empty : "Country Flag";
         }
 
         private void ExitButtonClick(object sender, EventArgs e)
@@ -62,6 +63,11 @@ namespace CountryFlag
 
         private void HideProgrammerNameCheckBoxCheckedChanged(object sender, EventArgs e)
         {
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
         }
     }
 }
