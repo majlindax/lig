@@ -51,6 +51,7 @@
             this.countryFlagPictureBox.TabIndex = 0;
             this.countryFlagPictureBox.TabStop = false;
             this.countryFlagPictureBox.Click += new System.EventHandler(this.CountryFlag_Click);
+            this.countryFlagPictureBox.Image = Properties.Resources.france;
             // 
             // franceRadioButton
             // 
@@ -160,6 +161,7 @@
             this.countryNameLabel.Name = "countryNameLabel";
             this.countryNameLabel.Size = new System.Drawing.Size(174, 66);
             this.countryNameLabel.TabIndex = 11;
+            this.countryNameLabel.Text = "France";
             this.countryNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1

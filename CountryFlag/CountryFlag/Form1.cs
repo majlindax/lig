@@ -36,7 +36,7 @@ namespace CountryFlag
 
         private void HideCountryNameCheckboxCheckedChanged(object sender, EventArgs e)
         {
-            countryNameLabel.Text = string.Empty;
+            countryNameLabel.Visible = !hideCountryNameCheckBox.Checked;
         }
 
         private void HideFormTitleCheckboxCheckedChanged(object sender, EventArgs e)
